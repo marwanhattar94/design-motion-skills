@@ -1,0 +1,11 @@
+{
+  "name": "rawa-design-skills",
+  "owner": { "name": "Marwan Hattar", "email": "marwan@rawa.ai" },
+  "plugins": [
+    {
+      "name": "design-motion-skills",
+      "source": "./",
+      "description": "52 design, UI and motion skills in one plugin."
+    }
+  ]
+}
