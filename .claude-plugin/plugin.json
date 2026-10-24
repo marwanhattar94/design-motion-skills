@@ -1,6 +1,6 @@
 {
   "name": "design-motion-skills",
   "version": "1.0.0",
-  "description": "52 design, UI and motion skills (GSAP, Lenis, Impeccable, React Bits, 21st.dev, HyperFrames, Emil Kowalski, taste-skill, motion video kits) in one place.",
+  "description": "Design, UI and motion skills (GSAP, Lenis, Impeccable, React Bits, 21st.dev, HyperFrames, Remotion, Emil Kowalski, taste-skill, motion video kits), synced daily from upstream.",
   "author": { "name": "Marwan Hattar", "email": "marwan@rawa.ai" }
 }

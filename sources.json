@@ -1,0 +1,19 @@
+{
+  "max_file_mb": 5,
+  "sources": [
+    {"repo": "greensock/gsap-skills", "license": "MIT", "skills": ["skills/*"]},
+    {"repo": "pbakaus/impeccable", "license": "Apache-2.0", "skills": [".claude/skills/impeccable"]},
+    {"repo": "darkroomengineering/lenis", "license": "MIT", "wrappers": {"lenis": {"README.md": "references/README.md", "LICENSE": "LICENSE"}}},
+    {"repo": "DavidHDev/react-bits", "license": "MIT + Commons Clause", "wrappers": {"react-bits": {"public/llms.txt": "references/llms.txt", "LICENSE.md": "LICENSE.md"}}},
+    {"repo": "21st-dev/skill", "license": "Apache-2.0", "skills": ["skills/*"]},
+    {"repo": "heygen-com/hyperframes", "license": "Apache-2.0", "skills": ["skills/*", ".claude/skills/*"]},
+    {"repo": "feitangyuan/onetake", "license": "PolyForm Noncommercial 1.0.0", "skills": ["."], "include": ["SKILL.md", "LICENSE", "README.md", "lib", "looks", "references", "scripts", "templates"]},
+    {"repo": "MegaTroll222/VOX-COLLAGE-BROLL", "license": "MIT", "skills": ["."], "include": ["SKILL.md", "README.md", "LICENSE"]},
+    {"repo": "JohnHeibel/ClaudeAnimationBase", "license": "MIT", "wrappers": {"claude-animation-base": {"ANIMATION_GUIDE.md": "references/ANIMATION_GUIDE.md", "README.md": "references/README.md", "LICENSE": "LICENSE"}}},
+    {"repo": "lemomo-ai/lemo-opuscar", "license": "MIT", "skills": ["plugin/skills/lemo-opuscar"]},
+    {"repo": "showheyohtaki/motion-prompt", "license": "MIT", "skills": ["skills/motion-prompt"]},
+    {"repo": "emilkowalski/skills", "license": "MIT", "skills": ["skills/*"]},
+    {"repo": "Leonxlnx/taste-skill", "license": "MIT", "skills": ["skills/taste-skill"]},
+    {"repo": "haidrrrry/claude-remotion-skill", "license": "MIT", "skills": ["remotion-motion-graphics"]}
+  ]
+}

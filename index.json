@@ -235,6 +235,11 @@
   "description": "React Bits component library (reactbits.dev) — animated UI components, text animations, backgrounds and micro-interactions in JS/TS with CSS or Tailwind. Use when building a React page or artifact that needs a striking animated text effect, background, card, cursor, carousel or micro-interaction, or when the user names a React Bits component."
  },
  {
+  "name": "remotion-motion-graphics",
+  "source": "https://github.com/haidrrrry/claude-remotion-skill",
+  "description": "Create and edit professional motion graphics videos with Remotion (React-based video). Use this skill EVERY time the user wants to create a video, edit a video, animate something, build an intro/outro/logo animation, make a Reel/Short/promo/launch video, add text animations or captions to footage, composite images and B-roll into a video, or mentions Remotion, motion graphics, video rendering, or \"make this video look better/less generic\". Also trigger when editing an existing Remotion project or when the user complains their video looks basic, generic, or amateur — this skill contains the exact fixes. Always read this skill BEFORE writing any Remotion code."
+ },
+ {
   "name": "remotion-to-hyperframes",
   "source": "https://github.com/heygen-com/hyperframes",
   "description": "Bring existing video code or footage into HyperFrames and verify it frame by frame against the original - Remotion first, also Motion Canvas, Lottie, Three.js, p5.js, canvas or plain HTML/CSS animation, or renders from Manim, After Effects or Blender. Use to port, convert, migrate or reuse work made with another tool."
