@@ -1,0 +1,38 @@
+name: Sync upstream skills
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [sources.json, custom/**, scripts/build.py, README.head.md, README.tail.md]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild skills from upstream
+        run: python3 scripts/build.py
+      - name: Commit changes
+        run: |
+          git config user.name "skills-sync[bot]"
+          git config user.email "skills-sync@users.noreply.github.com"
+          git add -A skills index.json README.md THIRD_PARTY.md .sources
+          if git diff --cached --quiet; then
+            echo "No upstream changes."
+          else
+            git commit -m "Sync upstream skills ($(date -u +%Y-%m-%d))"
+            git push
+          fi
