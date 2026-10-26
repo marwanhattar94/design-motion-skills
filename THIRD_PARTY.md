@@ -5,11 +5,11 @@ Copied from the repositories below under their licences; copyright stays with th
 | Source | Licence | Commit | Skills |
 |---|---|---|---|
 | https://github.com/greensock/gsap-skills | MIT | `aed9cfd` | gsap-core, gsap-frameworks, gsap-performance, gsap-plugins, gsap-react, gsap-scrolltrigger, gsap-timeline, gsap-utils |
-| https://github.com/pbakaus/impeccable | Apache-2.0 | `9368675` | impeccable |
+| https://github.com/pbakaus/impeccable | Apache-2.0 | `3671d50` | impeccable |
 | https://github.com/darkroomengineering/lenis | MIT | `e01eefb` | lenis |
 | https://github.com/DavidHDev/react-bits | MIT + Commons Clause | `e12c221` | react-bits |
 | https://github.com/21st-dev/skill | Apache-2.0 | `15c7436` | 21st-ai, 21st-cli-use, 21st-design-sync, 21st-registry, 21st-ui-build, 21st-ui-explore, 21st-ui-review |
-| https://github.com/heygen-com/hyperframes | Apache-2.0 | `2bff65b` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, slideshow, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
+| https://github.com/heygen-com/hyperframes | Apache-2.0 | `a183125` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, slideshow, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
 | https://github.com/feitangyuan/onetake | PolyForm Noncommercial 1.0.0 | `013a61a` | onetake |
 | https://github.com/MegaTroll222/VOX-COLLAGE-BROLL | MIT | `2e9b8a9` | collage-broll-explainers |
 | https://github.com/JohnHeibel/ClaudeAnimationBase | MIT | `0ac8bf2` | claude-animation-base |
