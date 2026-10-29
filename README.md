@@ -1,6 +1,6 @@
 # Design & Motion Skills
 
-53 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
+54 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
 
 ## How it stays live
 - A GitHub Action (`.github/workflows/sync.yml`) runs every day at 03:00 UTC. It pulls every repo in `sources.json`, rebuilds `skills/`, and commits only if something changed. Each upstream commit is pinned in `THIRD_PARTY.md`.
@@ -138,6 +138,7 @@ Run `/plugin marketplace update` to pull new versions.
 | `mobile-native` | Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate "a website in a browser" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, input… |
 | `pick-ui-library` | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly i… |
 | `prototype` | Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does n… |
+| `remove-animations` | Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but… |
 | `review-animations` | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned. |
 | `write-swift` | How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API desig… |
 
