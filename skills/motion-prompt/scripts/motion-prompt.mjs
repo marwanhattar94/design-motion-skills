@@ -59,7 +59,7 @@ Usage: node motion-prompt.mjs <command> [options]
                         [--timeout <seconds, default ${PICK_TIMEOUT}>] [--no-open] [--local]
   search <words...>     best matches (English or Japanese words)   [--pack <pack>] [--limit N]
   list                  packs, categories and counts
-  list --pack <pack>    every element in one pack
+  list --pack <pack>    every element in one pack (or in several: --pack camera,camera2)
   get <id> [<id>...]    code + spec for up to ${MAX_GET} elements (accepts 12, 012, #012 or a demo URL)
   prompt <id> [...]     the copy-paste prompt for an element
   kit <pack>            shared constants and helpers the pack's elements need
@@ -67,6 +67,7 @@ Usage: node motion-prompt.mjs <command> [options]
 
 Options:
   --lang ja|en          language of names and text (default en; Japanese search words switch to ja)
+  --pack <pack[,pack]>  pick, search, list: one pack, or several joined by commas (a field's part 1 and part 2 together)
   --out <dir>           write files into <dir> instead of printing (get, prompt, kit)
   --refresh             ignore the disk cache
   --no-open             pick: print the gallery URL instead of opening a browser
@@ -258,6 +259,13 @@ function requirePack(cat, name) {
   if (!found) throw new CliError(EXIT.NOT_FOUND, `No pack named "${name}". Packs: ${packsOf(cat).map(packKey).join(', ')}`);
   return packKey(found);
 }
+// "camera" or "camera,camera2": one pack or several, in the order given, each checked, duplicates dropped.
+function requirePacks(cat, names) {
+  const keys = [];
+  for (const n of String(names).split(',').map((s) => s.trim()).filter(Boolean)) { const k = requirePack(cat, n); if (!keys.includes(k)) keys.push(k); }
+  if (!keys.length) throw new CliError(EXIT.USAGE, '--pack needs a pack name, e.g. --pack camera or --pack camera,camera2.');
+  return keys;
+}
 
 function parseId(token) {
   const m = /(?:^|#|\/)(\d{1,4})\/?$/.exec(String(token).trim());
@@ -335,16 +343,16 @@ function emit(files, outDir) {
 async function cmdSearch(store, args, flags, lang) {
   if (!args.length) throw new CliError(EXIT.USAGE, 'search needs at least one word, e.g. "search typewriter" or "search 文字 登場".');
   const cat = await store.loadCatalog();
-  const pack = flags.pack ? requirePack(cat, flags.pack) : null;
+  const packs = flags.pack ? requirePacks(cat, flags.pack) : null;
   const limit = Math.max(1, Math.min(50, Number(flags.limit) || 8));
   const tokens = args.join(' ').toLowerCase().split(/[\s,、　]+/).filter(Boolean);
   const hits = cat.elements
-    .filter((e) => !pack || e.pack === pack)
+    .filter((e) => !packs || packs.includes(e.pack))
     .map((e) => ({ e, ...score(cat, e, tokens) }))
     .filter((h) => h.matched > 0)
     .sort((a, b) => b.matched - a.matched || b.total - a.total || a.e.id.localeCompare(b.e.id));
   if (!hits.length) {
-    console.log(`No match for "${args.join(' ')}"${pack ? ` in pack ${pack}` : ''}. Try other words (English tags match best), or browse with "list --pack <pack>".`);
+    console.log(`No match for "${args.join(' ')}"${packs ? ` in pack ${packs.join(', ')}` : ''}. Try other words (English tags match best), or browse with "list --pack <pack>".`);
     return;
   }
   for (const h of hits.slice(0, limit)) console.log(line(cat, h.e, lang));
@@ -355,11 +363,13 @@ async function cmdSearch(store, args, flags, lang) {
 async function cmdList(store, flags, lang) {
   const cat = await store.loadCatalog();
   if (flags.pack) {
-    const pack = requirePack(cat, flags.pack);
-    const items = cat.elements.filter((e) => e.pack === pack);
+    const packs = requirePacks(cat, flags.pack);
+    const items = cat.elements.filter((e) => packs.includes(e.pack));
     let current = null;
     for (const e of items) {
-      const label = categoryLabel(cat, e, lang).label;
+      // with several packs, each heading names its pack too (part 1 and part 2 share category names)
+      const p = packsOf(cat).find((x) => packKey(x) === e.pack);
+      const label = (packs.length > 1 ? `${tx(p && p.title, lang) || e.pack} · ` : '') + categoryLabel(cat, e, lang).label;
       if (label !== current) { console.log(`${current === null ? '' : '\n'}## ${label}`); current = label; }
       console.log(`#${e.id}  ${tx(e.name, lang)}  ${tx(e.summary, lang)}`);
     }
@@ -604,7 +614,7 @@ async function cmdPick(store, args, flags) {
   const root = flags.local ? repoRoot() : null;
   if (flags.local && !root) throw new CliError(EXIT.USAGE, '--local needs a full clone of the repository (index.html and assets/ three folders above this script). Run pick without --local to use the public gallery.');
   const cat = await store.loadCatalog(); // fail before opening anything if there is no data
-  const pack = flags.pack ? requirePack(cat, flags.pack) : null;
+  const pack = flags.pack ? requirePacks(cat, flags.pack).join(',') : null; // the gallery accepts ?pack=camera,camera2 too
 
   const token = crypto.randomBytes(16).toString('hex');
   const server = http.createServer();
