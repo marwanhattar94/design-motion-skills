@@ -47,7 +47,7 @@ Run `/plugin marketplace update` to pull new versions.
 
 | Skill | Use it for |
 |---|---|
-| `impeccable` | Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, setti… |
+| `impeccable` | Use to design, redesign, critique, audit, polish or animate a frontend: websites, landing pages, dashboards, app UI, components, native iOS/Android screens, or a design system (DESIGN.md). |
 
 ### [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis)
 
