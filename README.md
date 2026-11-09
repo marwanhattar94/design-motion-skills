@@ -1,6 +1,6 @@
 # Design & Motion Skills
 
-57 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
+58 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
 
 ## How it stays live
 - A GitHub Action (`.github/workflows/sync.yml`) runs every day at 03:00 UTC. It pulls every repo in `sources.json`, rebuilds `skills/`, and commits only if something changed. Each upstream commit is pinned in `THIRD_PARTY.md`.
@@ -137,6 +137,7 @@ Run `/plugin marketplace update` to pull new versions.
 | `choreograph` | Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use… |
 | `emil-design-eng` | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. |
 | `find-animation-opportunities` | Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks "what could be ani… |
+| `gestures` | Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe… |
 | `improve-animations` | Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code… |
 | `mobile-native` | Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate "a website in a browser" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, input… |
 | `pick-ui-library` | Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly i… |
