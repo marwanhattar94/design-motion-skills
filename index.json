@@ -60,6 +60,11 @@
   "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces."
  },
  {
+  "name": "ask-emil",
+  "source": "https://github.com/emilkowalski/skills",
+  "description": "Ask which skill or flow fits your situation. A router over the skills in this repo."
+ },
+ {
   "name": "ask-sonner",
   "source": "https://github.com/emilkowalski/skills",
   "description": "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode."
@@ -222,7 +227,7 @@
  {
   "name": "motion-prompt",
   "source": "https://github.com/showheyohtaki/motion-prompt",
-  "description": "Motion Prompt (showheyohtaki.github.io/motion-prompt) is a numbered library of names for motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, photo looks and lighting, and art styles for image generation, each with a moving sample, a spec of its timings and easing, and dependency-free Canvas 2D code. The main use: open the gallery for the user with the pick command, let them tick what they want, receive their picks, then rebuild exactly those in the project (Canvas, Remotion, CSS/SVG/Lottie, After Effects) or turn them into prompts for video or image models. Use when the user wants to see or choose from the library, e.g. \"open the motion-prompt library\", \"show me the list\", \"what moves are there?\", \"I don''t know the name, let me pick\", \"motion-prompt のライブラリ出して\", \"一覧見せて\", \"どんな演出がある？\", \"分からないから選びたい\"; when they paste picks copied from the gallery; or when they give element numbers, e.g. \"use #012 and #045\", \"今のタイトルを #005 に差し替えて\"."
+  "description": "Motion Prompt (showheyohtaki.github.io/motion-prompt) is a numbered library of names for motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, photo looks and lighting, art styles for image generation, and diagrams and charts for slides, each with a moving sample, a spec of its timings and easing, and dependency-free Canvas 2D code. The main use: open the gallery for the user with the pick command, let them tick what they want, receive their picks, then rebuild exactly those in the project (Canvas, Remotion, CSS/SVG/Lottie, After Effects) or turn them into prompts for video or image models. Use when the user wants to see or choose from the library, e.g. \"open the motion-prompt library\", \"show me the list\", \"what moves are there?\", \"I don''t know the name, let me pick\", \"motion-prompt のライブラリ出して\", \"一覧見せて\", \"どんな演出がある？\", \"分からないから選びたい\"; when they paste picks copied from the gallery; or when they give element numbers, e.g. \"use #012 and #045\", \"今のタイトルを #005 に差し替えて\"."
  },
  {
   "name": "onetake",

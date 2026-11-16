@@ -1,6 +1,6 @@
 # Design & Motion Skills
 
-59 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
+60 agent skills for design, UI and motion, collected from 14 open-source repos and **kept live automatically**. Works with Claude (Cowork / claude.ai), Claude Code and any agent that reads `SKILL.md` files.
 
 ## How it stays live
 - A GitHub Action (`.github/workflows/sync.yml`) runs every day at 03:00 UTC. It pulls every repo in `sources.json`, rebuilds `skills/`, and commits only if something changed. Each upstream commit is pinned in `THIRD_PARTY.md`.
@@ -121,7 +121,7 @@ Run `/plugin marketplace update` to pull new versions.
 
 | Skill | Use it for |
 |---|---|
-| `motion-prompt` | Motion Prompt (showheyohtaki.github.io/motion-prompt) is a numbered library of names for motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, photo looks and lighting, and art… |
+| `motion-prompt` | Motion Prompt (showheyohtaki.github.io/motion-prompt) is a numbered library of names for motion-graphics moves, camera moves and transitions, UI components, landing-page and web effects, photo looks and lighting, art sty… |
 
 ### [emilkowalski/skills](https://github.com/emilkowalski/skills)
 
@@ -132,6 +132,7 @@ Run `/plugin marketplace update` to pull new versions.
 | `animation-performance` | Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Use when an animation is janky, c… |
 | `animation-vocabulary` | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" → Pop in; "the iOS rubber-band scroll" → Rubber-banding). Use when t… |
 | `apple-design` | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible tran… |
+| `ask-emil` | Ask which skill or flow fits your situation. A router over the skills in this repo. |
 | `ask-sonner` | Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and… |
 | `break-ui` | Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it b… |
 | `choreograph` | Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use… |
