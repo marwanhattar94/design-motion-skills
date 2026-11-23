@@ -117,7 +117,7 @@
  {
   "name": "figma",
   "source": "https://github.com/heygen-com/hyperframes",
-  "description": "Bring Figma into a HyperFrames video - rendered assets, brand tokens, components, storyboard frames as reconstructed motion (frames read as states, not slides), shaders and connector-assisted motion. Use when the person pastes a figma.com link or asks to use a Figma design, frame, logo or brand."
+  "description": "Bring Figma into a HyperFrames video - rendered assets, brand tokens, components, storyboard frames as reconstructed motion (frames read as states, not slides), shaders and connector-assisted motion. Use when the person asks to use a Figma design, frame, logo or brand in a video; a bare figma.com link is not that ask."
  },
  {
   "name": "find-animation-opportunities",
