@@ -5,16 +5,16 @@ Copied from the repositories below under their licences; copyright stays with th
 | Source | Licence | Commit | Skills |
 |---|---|---|---|
 | https://github.com/greensock/gsap-skills | MIT | `aed9cfd` | gsap-core, gsap-frameworks, gsap-performance, gsap-plugins, gsap-react, gsap-scrolltrigger, gsap-timeline, gsap-utils |
-| https://github.com/pbakaus/impeccable | Apache-2.0 | `b49177d` | impeccable |
+| https://github.com/pbakaus/impeccable | Apache-2.0 | `9e460a8` | impeccable |
 | https://github.com/darkroomengineering/lenis | MIT | `b82992b` | lenis |
 | https://github.com/DavidHDev/react-bits | MIT + Commons Clause | `37f53df` | react-bits |
 | https://github.com/21st-dev/skill | Apache-2.0 | `15c7436` | 21st-ai, 21st-cli-use, 21st-design-sync, 21st-registry, 21st-ui-build, 21st-ui-explore, 21st-ui-review |
-| https://github.com/heygen-com/hyperframes | Apache-2.0 | `7a7471e` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, reverse-any-video, slideshow, style-sampling, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
+| https://github.com/heygen-com/hyperframes | Apache-2.0 | `7359dc9` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, reverse-any-video, slideshow, style-sampling, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
 | https://github.com/feitangyuan/onetake | PolyForm Noncommercial 1.0.0 | `4e024be` | onetake |
 | https://github.com/MegaTroll222/VOX-COLLAGE-BROLL | MIT | `2e9b8a9` | collage-broll-explainers |
 | https://github.com/JohnHeibel/ClaudeAnimationBase | MIT | `0ac8bf2` | claude-animation-base |
 | https://github.com/lemomo-ai/lemo-opuscar | MIT | `8ca0dd8` | lemo-opuscar |
-| https://github.com/showheyohtaki/motion-prompt | MIT | `683ecca` | motion-prompt |
+| https://github.com/showheyohtaki/motion-prompt | MIT | `258f5f3` | motion-prompt |
 | https://github.com/emilkowalski/skills | MIT | `64eb3de` | animate, animate-expo, animation-performance, animation-vocabulary, apple-design, ask-emil, ask-sonner, break-ui, choreograph, emil-design-eng, find-animation-opportunities, gestures, improve-animations, learn-taste, mobile-native, pick-ui-library, prototype, remove-animations, review-animations, write-swift |
-| https://github.com/Leonxlnx/taste-skill | MIT | `6c0b5c7` | design-taste-frontend |
+| https://github.com/Leonxlnx/taste-skill | MIT | `d1a2bb4` | design-taste-frontend |
 | https://github.com/haidrrrry/claude-remotion-skill | MIT | `1dcbe5e` | remotion-motion-graphics |
