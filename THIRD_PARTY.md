@@ -6,10 +6,10 @@ Copied from the repositories below under their licences; copyright stays with th
 |---|---|---|---|
 | https://github.com/greensock/gsap-skills | MIT | `aed9cfd` | gsap-core, gsap-frameworks, gsap-performance, gsap-plugins, gsap-react, gsap-scrolltrigger, gsap-timeline, gsap-utils |
 | https://github.com/pbakaus/impeccable | Apache-2.0 | `2fc5e14` | impeccable |
-| https://github.com/darkroomengineering/lenis | MIT | `153eeb8` | lenis |
-| https://github.com/DavidHDev/react-bits | MIT + Commons Clause | `a30a9da` | react-bits |
+| https://github.com/darkroomengineering/lenis | MIT | `6a4d387` | lenis |
+| https://github.com/DavidHDev/react-bits | MIT + Commons Clause | `8252a56` | react-bits |
 | https://github.com/21st-dev/skill | Apache-2.0 | `15c7436` | 21st-ai, 21st-cli-use, 21st-design-sync, 21st-registry, 21st-ui-build, 21st-ui-explore, 21st-ui-review |
-| https://github.com/heygen-com/hyperframes | Apache-2.0 | `4c92e37` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, reverse-any-video, slideshow, style-sampling, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
+| https://github.com/heygen-com/hyperframes | Apache-2.0 | `d888571` | figma, hyperframes, hyperframes-cli, hyperframes-registry, media-use, remotion-to-hyperframes, reverse-any-video, slideshow, style-sampling, captions-overlay, changelog-video, cut-the-curve, motion-doctrine, oversized-cursor, seam-craft |
 | https://github.com/feitangyuan/onetake | PolyForm Noncommercial 1.0.0 | `4e024be` | onetake |
 | https://github.com/MegaTroll222/VOX-COLLAGE-BROLL | MIT | `2e9b8a9` | collage-broll-explainers |
 | https://github.com/JohnHeibel/ClaudeAnimationBase | MIT | `0ac8bf2` | claude-animation-base |
